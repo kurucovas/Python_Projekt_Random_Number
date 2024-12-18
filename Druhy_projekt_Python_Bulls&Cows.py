@@ -14,7 +14,6 @@ print(line)
 print("I´ve generated a random 4 digit number for you.\nLet´s play a bulls and cows game.")
 print(line)
 print("Enter a number:")
-print(line)
 
 # Generate secret 4 digit number whereas digits are unique and 1.digit is not zero:
 def generate_secret_number():
@@ -54,8 +53,9 @@ def play_game():
     guess_count = 0
     time_start = time.time()
     generated_number = generate_secret_number() # Generate secret number before loop starts:
-    print(generated_number)
+    # print(generated_number)
     while True:
+        print(line)
         entered_number = input(">>>")
         guess_count += 1
         if not validate_number(entered_number):                  # Validate entered number, if it´s invalid, 
